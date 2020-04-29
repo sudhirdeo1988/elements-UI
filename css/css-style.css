@@ -863,6 +863,36 @@ html {
           line-height: 16px;
           vertical-align: middle; } }
 /* -------------------------------------
+	Component :: FAQ
+------------------------------------- */
+.c-faqSect .f_sect {
+  display: block;
+  margin-bottom: 50px; }
+  .c-faqSect .f_sect .f_que {
+    color: #10223a;
+    border-bottom: 1px solid #10223a;
+    display: block;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    font-size: 32px;
+    line-height: 42px; }
+  .c-faqSect .f_sect .f_ans {
+    color: #10223a;
+    display: block;
+    padding-bottom: 10px;
+    font-size: 18px;
+    line-height: 21px; }
+
+@media (max-width: 768px) {
+  .c-faqSect .f_sect {
+    margin-bottom: 30px; }
+    .c-faqSect .f_sect .f_que {
+      font-size: 18px;
+      line-height: 20px; }
+    .c-faqSect .f_sect .f_ans {
+      font-size: 16px;
+      line-height: 19px; } }
+/* -------------------------------------
 	Component :: Utilities
 ------------------------------------- */
 /* --- Headings --- */
@@ -874,6 +904,28 @@ html {
   .heading.h1 {
     font-size: 32px;
     line-height: 42px; }
+
+.c-pageTitle {
+  border-bottom: 1px solid #10223a;
+  color: #10223a;
+  display: block;
+  position: relative;
+  padding-right: 50px;
+  font-size: 32px;
+  line-height: 42px;
+  padding-bottom: 13px;
+  margin-bottom: 30px; }
+  .c-pageTitle .titleEdit {
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    color: #10223a;
+    font-size: 18px;
+    padding: 0;
+    line-height: 18px;
+    text-transform: uppercase; }
 
 .blockTitle,
 .blockSubTitle {
@@ -937,6 +989,8 @@ html {
   outline: none !important;
   letter-spacing: 0.3px;
   border-radius: 5px; }
+  .c-btn.sm {
+    width: 200px; }
   .c-btn .icon {
     display: inline-block;
     font-size: 16px;
@@ -993,8 +1047,8 @@ html {
 
 @media (max-width: 768px) {
   .blockTitle {
-    font-size: 22px;
-    line-height: 28px; }
+    font-size: 22px !important;
+    line-height: 28px !important; }
 
   .blockSubTitle {
     font-size: 16px;
@@ -1010,7 +1064,15 @@ html {
 
   .heading.h1 {
     font-size: 22px;
-    line-height: 28px; } }
+    line-height: 28px; }
+
+  .c-pageTitle {
+    padding-right: 50px;
+    font-size: 22px;
+    line-height: 28px; }
+    .c-pageTitle .titleEdit {
+      font-size: 14px;
+      line-height: 23px; } }
 /* --- Form Fields --- */
 .loginFormFld {
   background-color: #ffffff;

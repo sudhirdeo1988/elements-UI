@@ -1118,6 +1118,49 @@ html {
 }
 
 /* -------------------------------------
+	Component :: FAQ
+------------------------------------- */
+.c-faqSect{
+  .f_sect{
+    display: block;
+    margin-bottom: 50px;
+
+      .f_que{
+        color: $fontColor;
+        border-bottom: 1px solid $fontColor;
+        display: block;
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+        font-size: 32px;
+        line-height: 42px;
+      }
+      .f_ans{
+        color: $fontColor;
+        display: block;
+        padding-bottom: 10px;
+        font-size: 18px;
+        line-height: 21px;
+      }
+  }
+}
+@media(max-width: 768px){
+  .c-faqSect{
+    .f_sect{
+      margin-bottom: 30px;
+        .f_que{
+          font-size: 18px;
+          line-height: 20px;
+        }
+        .f_ans{
+          font-size: 16px;
+          line-height: 19px;
+        }
+    }
+  }
+}
+
+
+/* -------------------------------------
 	Component :: Utilities
 ------------------------------------- */
 /* --- Headings --- */
@@ -1131,6 +1174,32 @@ html {
       line-height: 42px;
     }
 }
+
+.c-pageTitle{
+  border-bottom: 1px solid $fontColor;
+  color: $fontColor;
+  display: block;
+  position: relative;
+  padding-right: 50px;
+  font-size: 32px;
+  line-height: 42px;
+  padding-bottom: 13px;
+  margin-bottom: 30px;
+
+    .titleEdit{
+      background-color: transparent;
+      border: 0;
+      position: absolute;
+      top: 25px;
+      right: 0;
+      color: #10223a;
+      font-size: 18px;
+      padding: 0;
+      line-height: 18px;
+      text-transform: uppercase;
+    }
+}
+
 .blockTitle,
 .blockSubTitle{
   color: $fontColor;
@@ -1199,6 +1268,10 @@ html {
   outline: none !important;
   letter-spacing: 0.3px;
   border-radius: 5px;
+
+    &.sm{
+      width: 200px;
+    }
 
     .icon{
       display: inline-block;
@@ -1271,8 +1344,8 @@ html {
 
 @media(max-width: 768px){
   .blockTitle{
-    font-size: 22px;
-    line-height: 28px;
+    font-size: 22px !important;
+    line-height: 28px !important;
   }
   .blockSubTitle{
     font-size: 16px;
@@ -1293,6 +1366,16 @@ html {
       font-size: 22px;
       line-height: 28px;
     }
+  }
+  .c-pageTitle{
+    padding-right: 50px;
+    font-size: 22px;
+    line-height: 28px;
+  
+      .titleEdit{
+        font-size: 14px;
+        line-height: 23px;
+      }
   }
 }
 
