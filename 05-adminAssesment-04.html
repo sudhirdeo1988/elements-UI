@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>Dashboard</title>
+
+  <!-- ***** CSS Import ***** -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/css-style.css" />
+</head>
+
+<body class="c-body">
+  <!-- ********** Component :: Body **********  -->
+  <div class="c-pageContainer">
+
+    <!-- **** Header ****  -->
+    <div class="c-header">
+      <div class="logoSection">
+        <img src="./images/logo.png" alt="logo" />
+      </div>
+      <div class="navSection">
+        <ul>
+          <li><a href="#" class="link">Database</a></li>
+          <li><a href="#" class="link">My Elements</a></li>
+        </ul>
+      </div>
+      <div class="navSection right">
+        <ul>
+          <li><a href="#" class="link">Jill Johnson</a></li>
+        </ul>
+      </div>
+      <div class="hambMobile">
+        <button>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <!-- **** Header End ****  -->
+
+
+    <!-- **** Body Section ****  -->
+    <div class="c-section">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-12">
+            <div class="sectionBlock clearfix">
+
+
+              <!-- *** Heading Sect *** -->
+              <button class="c-btn" data-toggle="modal" data-target=".profCreation1">Modal 1</button>
+              <button class="c-btn" data-toggle="modal" data-target=".profCreation2">Modal 2</button>
+              <button class="c-btn" data-toggle="modal" data-target=".profCreation3">Modal 3</button>
+              <button class="c-btn" data-toggle="modal" data-target=".profCreation4">Modal 4</button>
+              <button class="c-btn" data-toggle="modal" data-target=".profCreation5">Modal 5</button>
+              <!-- *** Heading Sect End *** -->
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- **** Body Section End ****  -->
+
+
+    <!-- **** Footer ****  -->
+    <div class="c-footer">
+      <div class="row flex-column-reverse flex-md-row align-items-center no-gutters">
+        <div class="col-md-6 col-12">
+          <span class="footerText">© 2020 The Kung Group All Rights Reserved</span>
+        </div>
+        <div class="col-md-6 col-12">
+          <div class="navSection">
+            <ul>
+              <li><a href="#" class="link">Privacy Policy</a></li>
+              <li><a href="#" class="link">Terms of Use</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- **** Footer End ****  -->
+
+  </div>
+  <!-- ********** Component :: Body End **********  -->
+
+  <!-- *** Modal 1 *** -->
+  <div class="modal fade profCreation1 c-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <button class="closeModal" data-dismiss="modal" aria-label="Close"></button>
+        <div class="m_title mb-10">Do you want to add a deadline?</div>
+        <span class="m_subtitle">Adding a deadline is optional but it may encourage the individual(s) to complete the
+          assessment quickly.</span>
+
+        <div class="row align-items-center justify-content-center mb-50">
+          <div class="col-md-6 col-12">
+            <div class="loginFormFld">
+              <label>Deadline (Optional)</label>
+              <input type="text" class="fldTxt" placeholder="Deadline" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-12 text-center"><button class="c-btn bordered mb-10">Back</button></div>
+          <div class="col-md-6 col-12 text-center"><button class="c-btn">Next</button></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- *** Modal 1 end *** -->
+
+  <!-- *** Modal 2 *** -->
+  <div class="modal fade profCreation2 c-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <button class="closeModal" data-dismiss="modal" aria-label="Close"></button>
+        <div class="m_title mb-10">All set?</div>
+        <span class="m_subtitle">Before we send the assessment(s), does everything look good?</span>
+
+        <!-- **** Accordian Section ****  -->
+        <div class="c-userAccordian">
+          <div class="accordion" id="accord2">
+            <div class="card">
+              <div class="card-header" id="heading2" role="button" data-toggle="collapse" data-target="#collap2"
+                aria-expanded="true" aria-controls="collap2">
+
+                <div class="row no-gutters align-items-center">
+
+                  <div class="col-md-4 col-sm-6 col-12 text-left">
+                    <span class="a_title">Tami Braxton</span>
+                  </div>
+
+                  <div class="col-md-4 col-sm-12 col-12 text-left">
+                    <div class="staticInfo">
+                      <span class="t1">Email</span>
+                      <span class="t2">ronstewart@xyzco.com</span>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-12 col-12 text-left">
+                    <div class="staticInfo">
+                      <span class="t1">Deadline</span>
+                      <span class="t2">04/10/20</span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div id="collap2" class="collapse" aria-labelledby="heading2" data-parent="#accord2">
+                <div class="card-body">
+                  Accord Body
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- **** Accordian Section End ****  -->
+
+        <div class="row">
+          <div class="col-md-6 col-12 text-left text-c-m"><button class="c-btn bordered mb-10">Back</button></div>
+          <div class="col-md-6 col-12 text-right text-c-m"><button class="c-btn">Send</button></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- *** Modal 1 end *** -->
+
+  <!-- *** Modal 3 *** -->
+  <div class="modal fade profCreation3 c-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <button class="closeModal" data-dismiss="modal" aria-label="Close"></button>
+        <div class="m_title mb-10">Sent!</div>
+        <div class="m_img">
+          <img src="./images/noun_sent_2966355.svg" alt="" />
+        </div>
+        <span class="m_subtitle">The individual(s) will receive an email invitation.</span>
+
+        <div class="row">
+          <div class="col text-center"><button class="c-btn" data-dismiss="modal" aria-label="Close">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- *** Modal 3 end *** -->
+
+  <!-- *** Modal 4 *** -->
+  <div class="modal fade profCreation4 c-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <button class="closeModal" data-dismiss="modal" aria-label="Close"></button>
+        <div class="m_title mb-10">Do you want us to
+          create a Team Profile?</div>
+        <span class="m_subtitle mb-10">Adding a team name below will create an additional report from everyone’s scores.
+          Each participant will still receive an individual Elements report. </span>
+        <span class="m_subtitle"> If these people don’t work together, just leave the field blank. You can always create
+          this later.</span>
+
+        <div class="row align-items-center justify-content-center mb-50">
+          <div class="col-md-6 col-12">
+            <div class="loginFormFld">
+              <label>Team Name (Optional)</label>
+              <input type="text" class="fldTxt" placeholder="Team Name" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-12 text-center"><button class="c-btn bordered mb-10">Back</button></div>
+          <div class="col-md-6 col-12 text-center"><button class="c-btn">Next</button></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- *** Modal 4 end *** -->
+
+    <!-- *** Modal 5 *** -->
+    <div class="modal fade profCreation5 c-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <button class="closeModal" data-dismiss="modal" aria-label="Close"></button>
+        <div class="m_title mb-10">Cancel assessment</div>
+        <span class="m_subtitle">The individual(s) will receive an email invitation.</span>
+
+        <div class="row">
+          <div class="col-md-6 col-12 text-left text-c-m"><button class="c-btn bordered mb-10">No</button></div>
+          <div class="col-md-6 col-12 text-right text-c-m"><button class="c-btn">Yes</button></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- *** Modal 5 end *** -->
+
+  <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="./js/popper.min.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

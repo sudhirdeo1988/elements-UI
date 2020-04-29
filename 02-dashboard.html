@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Dashboard</title>
+
+    <!-- ***** CSS Import ***** -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/css-style.css" />
+  </head>
+  <body class="c-body">
+    <!-- ********** Component :: Body **********  -->
+    <div class="c-pageContainer">
+
+      <!-- **** Header ****  -->
+      <div class="c-header">
+        <div class="logoSection">
+          <img src="./images/logo.png" alt="logo" />
+        </div>
+        <div class="navSection">
+          <ul>
+            <li><a href="#" class="link">Database</a></li>
+            <li><a href="#" class="link">My Elements</a></li>
+          </ul>
+        </div>
+        <div class="navSection right">
+          <ul>
+            <li class="c-subNav st-openSubnav">
+              <a href="javascript:void(0)" class="link">Jill Johnson</a>
+              <div class="subNav">
+                <ul>
+                  <li><a href="#" class="subLink">Account</a> </li>
+                  <li><a href="#" class="subLink">FAQ</a> </li>
+                  <li><a href="#" class="subLink">Logout</a> </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="hambMobile">
+          <button>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <!-- ***** Nav For Mobile ***** -->
+        <div class="navMobile">
+          <ul>
+            <li><a href="#" class="subLink">Account</a> </li>
+            <li><a href="#" class="subLink">FAQ</a> </li>
+            <li><a href="#" class="subLink">Logout</a> </li>
+          </ul>
+        </div>
+        <!-- ***** Nav For Mobile End ***** -->
+
+      </div>
+      <!-- **** Header End ****  -->
+
+
+      <!-- **** Body Section ****  -->
+      <div class="c-section">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-12">
+              <div class="sectionBlock clearfix">
+
+                <!-- *** Heading Sect *** -->
+                <div class="headingSect">
+                  <h2 class="blockTitle">
+                    TKG Elements Assessment
+                  </h2>
+                  <span class="blockSubTitle">
+                    Please rank each word as it describes you from most to least
+                    <button class="tooltag">?</button>
+                  </span>
+                </div>
+                <!-- *** Heading Sect End *** -->
+
+                <!-- *** Quiz Sect *** -->
+                <div class="c-quizSect">
+                  <div class="row justify-content-center">
+                    <div class="col-md-7 col-sm-10 col-10">
+
+                      <!-- Quiz Row -->
+                      <div class="row no-gutters quizRow mb-30 hideForMobile">
+                        <div class="col-md-5 col-sm-5 col-12"></div>
+                        <div class="col"><span class="quizHeading">Most</span></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"><span class="quizHeading">Least</span></div>
+                      </div>
+                      <!-- Quiz Row End -->
+
+                      <!-- Quiz Row -->
+                      <div class="row no-gutters quizRow">
+                        <div class="col-md-5 col-sm-5 col-12">
+                          <span class="quizRow_lbl">Charismatic</span>
+                        </div>
+                        <div class="col">
+                          <div class="quizOption c1">
+                            <input type="radio" id="opt1" name="option1" />
+                            <label for="opt1" class="optionDiv"></label>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="quizOption c2">
+                            <input type="radio" id="opt2" name="option1" />
+                            <label for="opt2" class="optionDiv"></label>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="quizOption c3">
+                            <input type="radio" id="opt3" name="option1" />
+                            <label for="opt3" class="optionDiv"></label>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="quizOption c4">
+                            <input type="radio" id="opt4" name="option1" />
+                            <label for="opt4" class="optionDiv"></label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <span class="errorMsg">Please make a selection</span>
+                        </div>
+                      </div>
+                      <!-- Quiz Row End -->
+
+                      <!-- Quiz Row -->
+                      <div class="row no-gutters quizRow">
+                        <div class="col-md-5 col-sm-5 col-12">
+                          <span class="quizRow_lbl">Charismatic</span>
+                        </div>
+                        <div class="col">
+                          <div class="quizOption c1">
+                            <input type="radio" id="opt11" name="option11" />
+                            <label for="opt11" class="optionDiv"></label>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="quizOption c2">
+                            <input type="radio" id="opt12" name="option11" />
+                            <label for="opt12" class="optionDiv"></label>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="quizOption c3">
+                            <input type="radio" id="opt13" name="option11" />
+                            <label for="opt13" class="optionDiv"></label>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="quizOption c4">
+                            <input type="radio" id="opt14" name="option11" />
+                            <label for="opt14" class="optionDiv"></label>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Quiz Row End -->
+
+                    </div>
+                  </div>
+
+                  <div class="row justify-content-center quizPagination">
+                    <div class="col-2">
+                      <button class="pageBtn">
+                        <i class="icon el-angle-left"></i>
+                      </button>
+                    </div>
+                    <div class="col-8">
+                      <span class="pageLabel">1/15</span>
+                    </div>
+                    <div class="col-2">
+                      <button class="pageBtn">
+                        <i class="icon el-angle-right"></i>
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- *** Quiz Sect *** -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- **** Body Section End ****  -->
+
+
+      <!-- **** Footer ****  -->
+      <div class="c-footer">
+        <div class="row flex-column-reverse flex-md-row align-items-center no-gutters">
+          <div class="col-md-6 col-12">
+              <span class="footerText">© 2020 The Kung Group All Rights Reserved</span>
+          </div>
+          <div class="col-md-6 col-12">
+              <div class="navSection">
+                <ul>
+                  <li><a href="#" class="link">Privacy Policy</a></li>
+                  <li><a href="#" class="link">Terms of Use</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- **** Footer End ****  -->
+
+    </div>
+    <!-- ********** Component :: Body End **********  -->
+
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/scripts.js"></script>
+  </body>
+</html>

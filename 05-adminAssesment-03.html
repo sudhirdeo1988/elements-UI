@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>Dashboard</title>
+
+  <!-- ***** CSS Import ***** -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/css-style.css" />
+</head>
+
+<body class="c-body">
+  <!-- ********** Component :: Body **********  -->
+  <div class="c-pageContainer">
+
+    <!-- **** Header ****  -->
+    <div class="c-header">
+      <div class="logoSection">
+        <img src="./images/logo.png" alt="logo" />
+      </div>
+      <div class="navSection">
+        <ul>
+          <li><a href="#" class="link">Database</a></li>
+          <li><a href="#" class="link">My Elements</a></li>
+        </ul>
+      </div>
+      <div class="navSection right">
+        <ul>
+          <li><a href="#" class="link">Jill Johnson</a></li>
+        </ul>
+      </div>
+      <div class="hambMobile">
+        <button>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <!-- **** Header End ****  -->
+
+
+    <!-- **** Body Section ****  -->
+    <div class="c-section">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-12">
+            <div class="sectionBlock clearfix">
+
+
+              <!-- *** Heading Sect *** -->
+              <div class="headingSect">
+                <h2 class="blockTitle">
+                  First, let us know who you want to assess
+                </h2>
+                <span class="blockSubTitle sm">Enter the contact information of the individual(s) below.</span>
+                <span class="blockSubTitle sm">Tip: You can paste multiple rows of data into the table.</span>
+
+                <div class="dropdown c-dropdown mt-20">
+                  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Select Organization
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">None</a>
+                    <a class="dropdown-item" href="#">ABC Co.</a>
+                    <a class="dropdown-item" href="#">ABC Co.</a>
+                  </div>
+                </div>
+              </div>
+              <!-- *** Heading Sect End *** -->
+
+              <!-- *** Quiz Sect *** -->
+              <div class="row no-gutters  justify-content-center">
+                <div class="col-md-12 col-sm-12 col-12">
+                  <div class="c-assesmentSect">
+
+                    <div class="row no-gutters c-tableRow thead">
+                      <div class="col">
+                        <span class="th">First Name</span>
+                      </div>
+                      <div class="col">
+                        <span class="th">Last Name</span>
+                      </div>
+                      <div class="col">
+                        <span class="th">Email Address</span>
+                      </div>
+                      <div class="col">
+                        <span class="th">User Type</span>
+                      </div>
+                    </div>
+
+                    <div class="row no-gutters align-items-center c-tableRow tbody st-active">
+                      <div class="col-md-3 col-sm-6 col-6">
+                        <div class="th">
+                          <input type="text" class="frmTxt" placeholder="First" />
+                          <label class="forMobile">First</label>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-6">
+                        <div class="th">
+                          <input type="text" class="frmTxt" placeholder="Last" />
+                          <label class="forMobile">Last</label>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-12">
+                        <div class="th">
+                          <input type="text" class="frmTxt" placeholder="Email" />
+                          <label class="forMobile">Email</label>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-12">
+                        <div class="th cust">
+                          <div class="dropdown c-dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              Select Organization
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">None</a>
+                              <a class="dropdown-item" href="#">ABC Co.</a>
+                              <a class="dropdown-item" href="#">ABC Co.</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row no-gutters align-items-center c-tableRow tbody st-active">
+                      <div class="col-md-3 col-sm-6 col-6">
+                        <div class="th">
+                          <input type="text" class="frmTxt" placeholder="First" />
+                          <label class="forMobile">First</label>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-6">
+                        <div class="th">
+                          <input type="text" class="frmTxt" placeholder="Last" />
+                          <label class="forMobile">Last</label>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-12">
+                        <div class="th">
+                          <input type="text" class="frmTxt" placeholder="Email" />
+                          <label class="forMobile">Email</label>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-12">
+                        <div class="th cust">
+                          <div class="dropdown c-dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              Select Organization
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">None</a>
+                              <a class="dropdown-item" href="#">ABC Co.</a>
+                              <a class="dropdown-item" href="#">ABC Co.</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="uploadMobile">
+                      <button><i class="icon el-add"></i></button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- *** Quiz Sect *** -->
+
+              <div class="row justify-content-center">
+                <div class="col-sm-6 col-12 text-left text-c-m">
+                  <button class="c-btn bordered mb-10">
+                    Cancel
+                  </button>
+                </div>
+                <div class="col-sm-6 col-12 text-right text-c-m">
+                  <button class="c-btn">
+                    Next
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- **** Body Section End ****  -->
+
+
+    <!-- **** Footer ****  -->
+    <div class="c-footer">
+      <div class="row flex-column-reverse flex-md-row align-items-center no-gutters">
+        <div class="col-md-6 col-12">
+          <span class="footerText">© 2020 The Kung Group All Rights Reserved</span>
+        </div>
+        <div class="col-md-6 col-12">
+          <div class="navSection">
+            <ul>
+              <li><a href="#" class="link">Privacy Policy</a></li>
+              <li><a href="#" class="link">Terms of Use</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- **** Footer End ****  -->
+
+  </div>
+  <!-- ********** Component :: Body End **********  -->
+
+  <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="./js/popper.min.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
