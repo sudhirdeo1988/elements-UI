@@ -99,6 +99,19 @@ html {
 .el-filter:before {
   content: "\6d";
 }
+.el-caret-down:before {
+  content: "\6e";
+}
+.el-caret-up:before {
+  content: "\6f";
+}
+.el-checkbox:before {
+  content: "\70";
+}
+.el-checked:before {
+  content: "\71";
+}
+
 
 /* -------------------------------------
 	Component :: Header
@@ -850,9 +863,53 @@ html {
 /* -------------------------------------
 	Component :: Accordian
 ------------------------------------- */
+.c-accordTable{
+  .c-accordHeader{
+    border: 2px solid transparent;
+    display: block;
+    margin-bottom: 20px;
+
+      .sortBtn{
+          button{
+            background-color: transparent;
+            border: 0;
+            display: block;
+            font-size: 16px;
+            line-height: 19px;
+            color: #abb4b9;
+            text-transform: uppercase;
+            position: relative;
+            padding: 0 20px 0 0;
+            outline: none;
+            cursor: pointer;
+
+              &::after{
+                color: #abb4b9;
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 14px;
+                line-height: 14px;
+                font-family: "element";
+                content: "\6e";
+              }
+              &.desc{
+                &::after{
+                  content: "\6f";
+                }
+              }
+          }
+
+      }
+  }
+}
+
+
 .c-userAccordian{
   display: block;
   margin-bottom: 18px;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 
     .card{
       display: block;
@@ -889,6 +946,17 @@ html {
           border-top: 0;
           text-align: center;
         }
+    }
+
+    &.type-01{
+      .card{
+        .card-header{
+          padding: 19px 0;
+          min-height: 60px;
+          height: auto;
+          line-height: normal;
+        }
+      }
     }
     .staticInfo{
       display: block;
@@ -1214,6 +1282,10 @@ html {
     font-size: 32px;
     line-height: 42px;
   }
+  &.h3{
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 .blockSubTitle{
   font-size: 32px;
@@ -1342,10 +1414,56 @@ html {
     }
 }
 
+/* checkbox */
+.formCheckbox{
+  position: relative;
+  display: inline-block;
+  height: 20px;
+    .checkBody{
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      z-index: 3;
+
+        ~ .checkCover{
+          position: relative;
+          height: 20px;
+          width: 20px;
+          display: inline-block;
+          background-color: $white;
+          z-index: 2;
+            &::before{
+              font-family: "element";
+              content: "\70";
+              font-size: 20px;
+              line-height: 20px;
+              display: inline-block;
+              color: $colorGray-01;
+            }
+        }
+
+        &:checked{
+          ~ .checkCover{
+            &::before{
+              font-family: "element";
+              content: "\71";
+            }
+          }
+
+        }
+    }
+}
+
 @media(max-width: 768px){
   .blockTitle{
     font-size: 22px !important;
     line-height: 28px !important;
+
+      &.h3{
+        font-size: 16px !important;
+        line-height: 19px !important;
+      }
   }
   .blockSubTitle{
     font-size: 16px;

@@ -125,6 +125,18 @@ html {
 .el-filter:before {
   content: "\6d"; }
 
+.el-caret-down:before {
+  content: "\6e"; }
+
+.el-caret-up:before {
+  content: "\6f"; }
+
+.el-checkbox:before {
+  content: "\70"; }
+
+.el-checked:before {
+  content: "\71"; }
+
 /* -------------------------------------
 	Component :: Header
 ------------------------------------- */
@@ -670,9 +682,39 @@ html {
 /* -------------------------------------
 	Component :: Accordian
 ------------------------------------- */
+.c-accordTable .c-accordHeader {
+  border: 2px solid transparent;
+  display: block;
+  margin-bottom: 20px; }
+  .c-accordTable .c-accordHeader .sortBtn button {
+    background-color: transparent;
+    border: 0;
+    display: block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #abb4b9;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 20px 0 0;
+    outline: none;
+    cursor: pointer; }
+    .c-accordTable .c-accordHeader .sortBtn button::after {
+      color: #abb4b9;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 14px;
+      line-height: 14px;
+      font-family: "element";
+      content: "\6e"; }
+    .c-accordTable .c-accordHeader .sortBtn button.desc::after {
+      content: "\6f"; }
+
 .c-userAccordian {
   display: block;
-  margin-bottom: 18px; }
+  margin-bottom: 18px;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); }
   .c-userAccordian .card {
     display: block; }
     .c-userAccordian .card .card-header {
@@ -701,6 +743,11 @@ html {
       border: 2px solid #96a2a7;
       border-top: 0;
       text-align: center; }
+  .c-userAccordian.type-01 .card .card-header {
+    padding: 19px 0;
+    min-height: 60px;
+    height: auto;
+    line-height: normal; }
   .c-userAccordian .staticInfo {
     display: block; }
     .c-userAccordian .staticInfo .t1,
@@ -939,6 +986,9 @@ html {
 .blockTitle.h2 {
   font-size: 32px;
   line-height: 42px; }
+.blockTitle.h3 {
+  font-size: 18px;
+  line-height: 22px; }
 
 .blockSubTitle {
   font-size: 32px;
@@ -1045,10 +1095,42 @@ html {
       .c-dropdown .dropdown-menu .dropdown-item:hover {
         background-color: #eceeef; }
 
+/* checkbox */
+.formCheckbox {
+  position: relative;
+  display: inline-block;
+  height: 20px; }
+  .formCheckbox .checkBody {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 3; }
+    .formCheckbox .checkBody ~ .checkCover {
+      position: relative;
+      height: 20px;
+      width: 20px;
+      display: inline-block;
+      background-color: #ffffff;
+      z-index: 2; }
+      .formCheckbox .checkBody ~ .checkCover::before {
+        font-family: "element";
+        content: "\70";
+        font-size: 20px;
+        line-height: 20px;
+        display: inline-block;
+        color: #96a2a7; }
+    .formCheckbox .checkBody:checked ~ .checkCover::before {
+      font-family: "element";
+      content: "\71"; }
+
 @media (max-width: 768px) {
   .blockTitle {
     font-size: 22px !important;
     line-height: 28px !important; }
+    .blockTitle.h3 {
+      font-size: 16px !important;
+      line-height: 19px !important; }
 
   .blockSubTitle {
     font-size: 16px;
