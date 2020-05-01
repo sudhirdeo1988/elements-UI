@@ -67,8 +67,7 @@
               <h2 class="blockTitle h2">
                 Results for “Johnson”
               </h2>
-              <button class="clearBtn" data-toggle="modal"
-                data-target=".profCreation5">
+              <button class="clearBtn" data-toggle="modal" data-target=".profCreation5">
                 <i class="icon el-add" data-toggle="tooltip" data-placement="bottom" title="Clear"></i>
               </button>
             </div>
@@ -414,16 +413,41 @@
   <!-- ********** Component :: Body End **********  -->
 
   <!-- *** Modal 5 *** -->
-  <div class="modal fade profCreation5 c-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+  <div class="modal fade profCreation6 c-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-md modal-dialog-centered" role="document">
       <div class="modal-content">
         <button class="closeModal" data-dismiss="modal" aria-label="Close"></button>
-        <div class="m_title mb-30">Are you sure you want to delete?</div>
+        <div class="m_title mb-10">New Team Profile</div>
 
-        <div class="row">
-          <div class="col-6 text-left"><button class="c-btn bordered mb-10">Cancel</button></div>
-          <div class="col-6 text-right"><button class="c-btn">Delete</button></div>
+
+        <div class="row justify-content-center  c-teamProf">
+          <div class="col-md-10 col-12">
+            <span class="m_subtitle md mb-10">2 Members</span>
+            <div class="loginFormFld">
+              <label>Team Name</label>
+              <input type="text" class="fldTxt" placeholder="Team Name" />
+            </div>
+
+            <div class="c-userList">
+              <ul>
+                <li>
+                  <span>John Doe</span>
+                  <button><i class="icon el-add"></i></button>
+                </li>
+                <li>
+                  <span>John Doe</span>
+                  <button><i class="icon el-add"></i></button>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row flex-column-reverse flex-md-row">
+          <div class="col-md-6 text-left text-c-m"><button class="c-btn mb-10">Cancel</button></div>
+          <div class="col-md-6 text-right text-c-m"><button class="c-btn mb-10">Create</button></div>
         </div>
 
       </div>
@@ -435,6 +459,11 @@
   <script type="text/javascript" src="./js/popper.min.js"></script>
   <script type="text/javascript" src="./js/bootstrap.min.js"></script>
   <script type="text/javascript" src="./js/scripts.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".profCreation6").modal('show');
+    });
+  </script>
 </body>
 
 </html>

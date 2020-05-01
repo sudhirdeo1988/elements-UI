@@ -37,6 +37,9 @@ font-family: 'Darker Grotesque', sans-serif;
 
   .text-r-m {
     text-align: right !important; } }
+.inlineBlock {
+  display: inline-block !important; }
+
 /* -------------------------------------
 	Theme default CSS
 ------------------------------------- */
@@ -640,6 +643,9 @@ html {
     line-height: 23px;
     margin-bottom: 30px;
     text-align: center; }
+    .c-modal .modal-content .m_subtitle.md {
+      font-size: 18px;
+      line-height: 23px; }
   .c-modal .modal-content .m_img {
     height: 118px;
     width: 118px;
@@ -801,6 +807,15 @@ html {
     min-height: 60px;
     height: auto;
     line-height: normal; }
+  .c-userAccordian.type-02 .card-header {
+    border: 2px solid #96a2a7;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 14px 0;
+    background-color: #ffffff;
+    border-radius: 3px; }
+    .c-userAccordian.type-02 .card-header .labelForMob {
+      display: none; }
   .c-userAccordian .staticInfo {
     display: block; }
     .c-userAccordian .staticInfo .t1,
@@ -873,7 +888,21 @@ html {
   .c-userAccordian .progressInfo {
     margin-bottom: 14px; }
   .c-userAccordian.type-01 .card .card-header {
-    padding: 10px; } }
+    padding: 10px; }
+  .c-userAccordian.type-02 .card-header {
+    padding: 24px; }
+    .c-userAccordian.type-02 .card-header .labelForMob {
+      display: block;
+      color: #96a2a7;
+      font-size: 12px;
+      line-height: 18px;
+      margin-bottom: 0; }
+    .c-userAccordian.type-02 .card-header .blockTitle {
+      margin-bottom: 10px;
+      color: #96a2a7; }
+      .c-userAccordian.type-02 .card-header .blockTitle.main {
+        color: #10223a;
+        font-weight: 600; } }
 .c-assesmentSect {
   border: 2px solid #96a2a7;
   display: block;
@@ -1038,6 +1067,53 @@ html {
 @media (max-width: 768px) {
   .c-report {
     margin-bottom: 20px; } }
+/* -------------------------------------
+	Component :: User List
+------------------------------------- */
+.c-teamProf .c-userList {
+  display: block;
+  margin-bottom: 50px; }
+  .c-teamProf .c-userList ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .c-teamProf .c-userList ul li {
+      display: block;
+      text-align: center;
+      margin-bottom: 7px; }
+      .c-teamProf .c-userList ul li span {
+        color: #10223a;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px; }
+      .c-teamProf .c-userList ul li button {
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        padding: 0;
+        display: inline-block;
+        height: 25px;
+        width: 25px;
+        text-align: center;
+        vertical-align: middle;
+        margin-left: 10px;
+        outline: none; }
+        .c-teamProf .c-userList ul li button .icon {
+          color: #10223a;
+          font-size: 14px;
+          display: inline-block;
+          vertical-align: middle;
+          line-height: 15px;
+          transform: rotate(45deg); }
+.c-teamProf .m_subtitle {
+  color: #10223a !important;
+  font-weight: 500; }
+.c-teamProf .c-dropdown {
+  display: block;
+  margin: 0 auto 50px; }
+
 /* -------------------------------------
 	Component :: Utilities
 ------------------------------------- */
