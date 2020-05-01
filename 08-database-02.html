@@ -63,6 +63,15 @@
               </div>
             </div>
 
+            <div class="searchResult text-left text-c-m">
+              <h2 class="blockTitle h2">
+                Results for “Johnson”
+              </h2>
+              <button class="clearBtn" data-toggle="modal"
+                data-target=".profCreation5">
+                <i class="icon el-add" data-toggle="tooltip" data-placement="bottom" title="Clear"></i>
+              </button>
+            </div>
 
             <!-- **** Accordian Table ****  -->
             <div class="c-accordTable">
@@ -71,6 +80,22 @@
                   <h2 class="blockTitle h2 mb-30 text-left text-c-m">
                     Individuals
                   </h2>
+                </div>
+                <div class="col-md-6 col-12 text-right text-c-m">
+                  <div class="reportActions">
+                    <ul>
+                      <li><span>1 SELECTED</span></li>
+                      <li><button data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                          <i class="icon el-edit-tools"></i>
+                        </button></li>
+                      <li><button data-toggle="tooltip" data-placement="bottom" title="Download Report">
+                          <i class="icon el-file"></i>
+                        </button></li>
+                      <li><button data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                          <i class="icon el-trash-can"></i>
+                        </button></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
@@ -297,6 +322,69 @@
             <!-- **** Accordian Table End ****  -->
 
 
+            <!-- **** Accordian Table ****  -->
+            <div class="c-accordTable">
+              <h2 class="blockTitle h2 mb-30 text-left text-c-m">
+                Teams
+              </h2>
+
+              <!-- **** Accordian Section ****  -->
+              <div class="c-userAccordian type-01">
+                <div class="accordion" id="accord2">
+                  <div class="card">
+                    <div class="card-header" id="heading2" role="button" data-toggle="collapse" data-target="#collap2"
+                      aria-expanded="true" aria-controls="collap2">
+
+                      <div class="row align-items-center">
+
+                        <div class="col-md-1 col-sm-2 col-2 text-center">
+                          <div class="formCheckbox">
+                            <input type="checkbox" id="checkAll1" class="checkBody" />
+                            <label class="checkCover" for="checkAll1"></label>
+                          </div>
+                        </div>
+                        <div class="col-md-5 col-sm-10 col-10 text-left">
+                          <span class="a_title">Tami Braxton</span>
+                        </div>
+
+                        <div class="col-md-2 col-sm-4 col-4 text-left">
+                          <div class="staticInfo dark">
+                            <span class="t1">Created</span>
+                            <span class="t2">03/15/20</span>
+                          </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-4 col-4 text-left">
+                          <div class="staticInfo dark">
+                            <span class="t1">Edited</span>
+                            <span class="t2">03/15/20</span>
+                          </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-4 col-4 text-left">
+                          <div class="staticInfo dark">
+                            <span class="t1">Members</span>
+                            <span class="t2">6</span>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div id="collap2" class="collapse" aria-labelledby="heading2" data-parent="#accord2">
+                      <div class="card-body">
+                        report
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- **** Accordian Section End ****  -->
+            </div>
+            <!-- **** Accordian Table End ****  -->
+
+
           </div>
         </div>
       </div>
@@ -324,6 +412,24 @@
 
   </div>
   <!-- ********** Component :: Body End **********  -->
+
+  <!-- *** Modal 5 *** -->
+  <div class="modal fade profCreation5 c-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <button class="closeModal" data-dismiss="modal" aria-label="Close"></button>
+        <div class="m_title mb-30">Are you sure you want to delete?</div>
+
+        <div class="row">
+          <div class="col-6 text-left"><button class="c-btn bordered mb-10">Cancel</button></div>
+          <div class="col-6 text-right"><button class="c-btn">Delete</button></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- *** Modal 5 end *** -->
 
   <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="./js/popper.min.js"></script>
