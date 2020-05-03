@@ -29,6 +29,13 @@ $(function() {
   });
 
   $('[data-toggle="tooltip"]').tooltip();
+  $('.type-datepicker').datepicker({
+    autoclose: true,
+    templates:{
+      leftArrow: '<i class="icon el-angle-left"></i>',
+    rightArrow: '<i class="icon el-angle-right"></i>'
+    }
+  });
 
   
 });
