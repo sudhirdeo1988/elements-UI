@@ -2007,6 +2007,9 @@ html {
   padding: 6px 11px;
   border-radius: 2px;
 
+    .errorMsg{
+      display: none;
+    }
     label{
       color: rgba(54, 65, 70, 0.35);
       display: block;
@@ -2033,6 +2036,7 @@ html {
         color: rgba(16, 34, 58, 0.3);
       }
     }
+
     &.st-error{
       border: 1px solid $error;
       margin-bottom: 30px;

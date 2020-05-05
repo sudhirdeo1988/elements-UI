@@ -1550,6 +1550,8 @@ html {
   margin-bottom: 20px;
   padding: 6px 11px;
   border-radius: 2px; }
+  .loginFormFld .errorMsg {
+    display: none; }
   .loginFormFld label {
     color: rgba(54, 65, 70, 0.35);
     display: block;
