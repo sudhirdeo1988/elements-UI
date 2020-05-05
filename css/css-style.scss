@@ -2035,8 +2035,17 @@ html {
     }
     &.st-error{
       border: 1px solid $error;
+      margin-bottom: 30px;
       .fldTxt{
         color: $error;
+      }
+      .errorMsg{
+        color: #fc4f49;
+        display: block;
+        font-size: 12px;
+        margin: 3px 0;
+        position: relative;
+        top: 3px;
       }
     }
     &.st-disabled{
