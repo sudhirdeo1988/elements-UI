@@ -1538,6 +1538,24 @@ html {
 
   .c-btn {
     min-width: 150px; } }
+.c-tnc {
+  display: block;
+  position: relative;
+  text-align: left;
+  margin-bottom: 20px; }
+  .c-tnc .tncQues,
+  .c-tnc .tncAns {
+    color: #10223a;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase; }
+  .c-tnc .tncAns {
+    font-weight: 400;
+    text-transform: none; }
+
 /* -------------------------------------
 	Component :: Utilities - Form Fields
 ------------------------------------- */
