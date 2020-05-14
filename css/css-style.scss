@@ -2038,6 +2038,22 @@ html {
   padding: 6px 11px;
   border-radius: 2px;
 
+  &.withDD{
+    height: auto;
+
+      .c-dropdown{
+        width: 100%;
+        max-width: 300px;
+        margin: 2px 0;
+        .btn{
+          text-align: left;
+          width: 100%;
+          outline: none;
+          padding: 13px 30px 13px 13px;
+        }
+      }
+  }
+
     .errorMsg{
       display: none;
     }
