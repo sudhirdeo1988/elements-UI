@@ -653,6 +653,8 @@ html {
     line-height: 23px;
     margin-bottom: 30px;
     text-align: center; }
+    .c-modal .modal-content .m_subtitle.type-01 {
+      color: #10223a; }
     .c-modal .modal-content .m_subtitle.md {
       font-size: 18px;
       line-height: 23px; }
@@ -1372,12 +1374,16 @@ html {
   min-width: 170px;
   outline: none !important;
   letter-spacing: 0.3px;
+  margin: 0 2px;
   border-radius: 3px; }
   .c-btn.st-disabled {
     background-color: #96a2a7;
     color: #ffffff; }
   .c-btn.sm {
     width: 200px; }
+  .c-btn.xs {
+    min-width: 50px;
+    width: 100%; }
   .c-btn .icon {
     display: inline-block;
     font-size: 16px;

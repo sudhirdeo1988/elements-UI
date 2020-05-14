@@ -33,9 +33,10 @@
                   <input type="password" class="fldTxt" placeholder="Password" />
                 </div>
                 <div class="fpassword">
-                  <a href="javascript:void(0);" class="btnLink">Forgot password?</a>
+                  <a href="javascript:void(0);" data-toggle="modal" data-target=".profCreation2" class="btnLink">Forgot password?</a>
                 </div>
                 <div class="btnContainer">
+                  <button class="c-btn">Login</button>
                   <button class="c-btn">Login</button>
                 </div>
               </div>
@@ -66,5 +67,37 @@
 
     </div>
     <!-- ********** Component :: Body End **********  -->
+
+
+      <!-- *** Modal 2 *** -->
+  <div class="modal fade profCreation2 c-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button class="closeModal" data-dismiss="modal" aria-label="Close"></button>
+
+        <div class="m_title mb-10">Forgot Your Password?</div>
+        <span class="m_subtitle type-01 md">Enter your registered email address below and we’ll send you a link to reset your password</span>
+        <div class="row">
+          <div class="col-7">
+            <div class="loginFormFld">
+              <label>Email address</label>
+              <input type="text" class="fldTxt" placeholder="Email address" />
+            </div>
+          </div>
+          <div class="col-5"><button class="c-btn xs">Send</button></div>
+          <div class="col-12">
+            <span class="m_subtitle type-01 mb-0">Thanks! Please check your email.</span>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+<!-- *** Modal 1 end *** -->
+
+<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/scripts.js"></script>
   </body>
 </html>

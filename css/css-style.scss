@@ -795,6 +795,9 @@ html {
         line-height: 23px;
         margin-bottom: 30px;
         text-align: center;
+          &.type-01{
+            color: $fontColor;
+          }
           &.md{
             font-size: 18px;
             line-height: 23px;
@@ -1774,6 +1777,7 @@ html {
   min-width: 170px;
   outline: none !important;
   letter-spacing: 0.3px;
+  margin: 0 2px;
   border-radius: 3px;
 
     &.st-disabled{
@@ -1783,6 +1787,10 @@ html {
 
     &.sm{
       width: 200px;
+    }
+    &.xs{
+      min-width: 50px;
+      width: 100%;
     }
 
     .icon{
