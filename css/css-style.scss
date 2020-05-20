@@ -1823,10 +1823,30 @@ html {
 
 .imgSection{
   display: block;
-  text-align: center;
-    img{
-      max-height: 140px;
+  height: auto;
+  overflow: hidden;
+  width: 330px;
+  margin: 0 auto;
+    .betaLogo{
+      border: 2px solid $fontColor;
+      color: $fontColor;
+      padding: 4px;
+      font-size: 14px;
+      line-height: 12px;
+      font-weight: 700;
+      float: right;
+      display: inline-block;
+      text-transform: uppercase;
+      margin-bottom: 10px;
     }
+    .logoImage{
+      display: block;
+      text-align: center;
+      img{
+        max-height: 140px;
+      }
+    }
+
 }
 
 .c-dropdown{
@@ -2063,6 +2083,7 @@ html {
       font-size: 10px;
       font-weight: 500;
       line-height: 12px;
+      letter-spacing: 1px;
       margin-bottom: 3px;
       text-transform: uppercase;
       text-align: left;
@@ -2145,7 +2166,7 @@ html {
 
       label{
         display: block;
-        color: #abb4b9;
+        color: $fontColor;
         font-size: 12px;
         line-height: 16px;
         margin-bottom: 0;
@@ -2153,7 +2174,7 @@ html {
           .lblLink{
             display: inline-block;
             text-decoration: underline;
-            color: #abb4b9;
+            color: $fontColor;
             font-size: 12px;
             line-height: 16px;
           }
@@ -2174,25 +2195,26 @@ html {
             left: 0;
             z-index: 2;
             background-color: transparent;
-            border-radius: 5px;
+            border-radius: 3px;
             border: 1px solid $colorGray-01;
 
             &::before{
               font-family: "element";
               content: '';
               position: absolute;
-              top: 0;
-              left: -2px;
-              font-size: 28px;
-              line-height: 25px;
+              top: 4px;
+              left: 3px;
+              font-size: 16px;
+              line-height: 15px;
             }
           }
 
           &:checked{
             ~ .checkMark{
+              background-color: $fontColor;
                 &::before{
-                  color: $fontColor;
-                  content: "\69";
+                  color: $white;
+                  content: "h";
                   position: absolute;
                 }
             }

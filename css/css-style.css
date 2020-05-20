@@ -1408,9 +1408,26 @@ html {
 
 .imgSection {
   display: block;
-  text-align: center; }
-  .imgSection img {
-    max-height: 140px; }
+  height: auto;
+  overflow: hidden;
+  width: 330px;
+  margin: 0 auto; }
+  .imgSection .betaLogo {
+    border: 2px solid #10223a;
+    color: #10223a;
+    padding: 4px;
+    font-size: 14px;
+    line-height: 12px;
+    font-weight: 700;
+    float: right;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  .imgSection .logoImage {
+    display: block;
+    text-align: center; }
+    .imgSection .logoImage img {
+      max-height: 140px; }
 
 .c-dropdown {
   display: inline-block;
@@ -1593,6 +1610,7 @@ html {
     font-size: 10px;
     font-weight: 500;
     line-height: 12px;
+    letter-spacing: 1px;
     margin-bottom: 3px;
     text-transform: uppercase;
     text-align: left;
@@ -1661,14 +1679,14 @@ html {
     margin-bottom: 15px; }
     .formField.chkBox label {
       display: block;
-      color: #abb4b9;
+      color: #10223a;
       font-size: 12px;
       line-height: 16px;
       margin-bottom: 0; }
       .formField.chkBox label .lblLink {
         display: inline-block;
         text-decoration: underline;
-        color: #abb4b9;
+        color: #10223a;
         font-size: 12px;
         line-height: 16px; }
     .formField.chkBox .inputChk {
@@ -1686,20 +1704,22 @@ html {
         left: 0;
         z-index: 2;
         background-color: transparent;
-        border-radius: 5px;
+        border-radius: 3px;
         border: 1px solid #96a2a7; }
         .formField.chkBox .inputChk ~ .checkMark::before {
           font-family: "element";
           content: '';
           position: absolute;
-          top: 0;
-          left: -2px;
-          font-size: 28px;
-          line-height: 25px; }
-      .formField.chkBox .inputChk:checked ~ .checkMark::before {
-        color: #10223a;
-        content: "\69";
-        position: absolute; }
+          top: 4px;
+          left: 3px;
+          font-size: 16px;
+          line-height: 15px; }
+      .formField.chkBox .inputChk:checked ~ .checkMark {
+        background-color: #10223a; }
+        .formField.chkBox .inputChk:checked ~ .checkMark::before {
+          color: #ffffff;
+          content: "h";
+          position: absolute; }
 
 .c-label {
   display: block;
@@ -1709,4 +1729,4 @@ html {
   text-transform: uppercase;
   margin: 10px 0; }
 
-/*# sourceMappingURL=css-style.css..map */
+/*# sourceMappingURL=css-style.css.map */
