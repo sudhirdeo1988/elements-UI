@@ -165,6 +165,9 @@ html {
 .el-interface:before {
   content: "\77"; }
 
+.el-search:before {
+  content: "\78"; }
+
 /* -------------------------------------
 	Component :: Header
 ------------------------------------- */
@@ -1208,9 +1211,9 @@ html {
       .c-teamProf .c-userList ul li span {
         color: #10223a;
         display: inline-block;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
-        line-height: 24px; }
+        line-height: 19px; }
       .c-teamProf .c-userList ul li button {
         background-color: transparent;
         border: 0;
@@ -1224,12 +1227,14 @@ html {
         margin-left: 10px;
         outline: none; }
         .c-teamProf .c-userList ul li button .icon {
-          color: #10223a;
+          color: #96a2a7;
           font-size: 14px;
           display: inline-block;
           vertical-align: middle;
           line-height: 15px;
           transform: rotate(45deg); }
+          .c-teamProf .c-userList ul li button .icon.noRotate {
+            transform: rotate(0deg); }
 .c-teamProf .m_subtitle {
   color: #10223a !important;
   font-weight: 500; }
@@ -1237,6 +1242,10 @@ html {
   display: block;
   margin: 0 auto 50px; }
 
+@media (max-width: 768px) {
+  .c-teamProf .c-userList ul li span {
+    font-size: 14px;
+    line-height: 18px; } }
 /* -------------------------------------
 	Component :: Date Picker
 ------------------------------------- */
@@ -1582,6 +1591,28 @@ html {
 /* -------------------------------------
 	Component :: Utilities - Form Fields
 ------------------------------------- */
+.searchField {
+  display: block;
+  position: relative;
+  padding: 0 0 0 25px;
+  margin-bottom: 10px; }
+  .searchField .icon {
+    position: absolute;
+    top: 12px;
+    left: 5px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #10223a; }
+  .searchField .inputDD {
+    display: block;
+    width: 100%;
+    padding: 6px 0;
+    border: 0;
+    border-bottom: 1px solid #333;
+    outline: none;
+    font-size: 14px;
+    color: #10223a; }
+
 .loginFormFld {
   background-color: #ffffff;
   border: 1px solid #dee1e3;
