@@ -2398,3 +2398,21 @@ html {
 	top: 0;
 	left: 0;
 }
+
+@media(max-width: 768px){
+  .filterSectionNew{
+    width: 100%;
+    box-sizing: border-box;
+
+      .c-dropdown{
+        display: block;
+
+        &.clean{
+          .btn{
+            width: 100%;
+            min-width: 100px;
+          }
+        } 
+      }
+  }
+}

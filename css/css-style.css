@@ -1873,4 +1873,14 @@ html {
   top: 0;
   left: 0; }
 
+@media (max-width: 768px) {
+  .filterSectionNew {
+    width: 100%;
+    box-sizing: border-box; }
+    .filterSectionNew .c-dropdown {
+      display: block; }
+      .filterSectionNew .c-dropdown.clean .btn {
+        width: 100%;
+        min-width: 100px; } }
+
 /*# sourceMappingURL=css-style.css.map */
