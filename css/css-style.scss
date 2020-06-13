@@ -988,6 +988,8 @@ html {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 
     .card{
+      border: 0;
+      background-color: transparent;
       display: block;
 
         .card-header{
@@ -997,7 +999,7 @@ html {
           padding: 14px 33px;
           background-color: $white;
           min-height: 70px;
-          border-radius: 3px;
+          border-radius: 4px;
 
             .a_title{
               color: $fontColor;
@@ -1018,9 +1020,11 @@ html {
             }
         }
         .card-body{
+          background-color: $white;
           border: 2px solid $colorGray-01;
           border-top: 0;
           text-align: center;
+          border-radius: 0 0 4px 4px;
         }
     }
 
@@ -1101,6 +1105,28 @@ html {
         font-size: 18px;
         line-height: 20px;
         vertical-align: middle;
+      }
+    }
+
+    &.withBorder{
+      margin-bottom: 30px;
+      .accordion{
+        position: relative;
+        border-radius: 4px;
+          &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            bottom: -13px;
+            height: 40px;
+            border: 2px solid #96a2a7;
+            border-top: 0;
+            background-color: $white;
+            box-sizing: border-box;
+            z-index: -1;
+            left: 0;
+            border-radius: 4px;
+          }
       }
     }
 }
