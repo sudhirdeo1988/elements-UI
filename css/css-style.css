@@ -6,8 +6,10 @@
 /*
 font-family: 'Darker Grotesque', sans-serif;
 */
-@import './bootstrap-datepicker.min.css';
-.fontBold, .blockSubTitle .tooltag, .c-quizSect .quizRow .quizHeading {
+@import "./bootstrap-datepicker.min.css";
+.fontBold,
+.blockSubTitle .tooltag,
+.c-quizSect .quizRow .quizHeading {
   font-weight: 600;
 }
 
@@ -85,7 +87,10 @@ html {
 @font-face {
   font-family: "element";
   src: url("../fonts/element.eot");
-  src: url("../fonts/element.eot?#iefix") format("embedded-opentype"), url("../fonts/element.woff") format("woff"), url("../fonts/element.ttf") format("truetype"), url("../fonts/element.svg#element") format("svg");
+  src: url("../fonts/element.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/element.woff") format("woff"),
+    url("../fonts/element.ttf") format("truetype"),
+    url("../fonts/element.svg#element") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -102,7 +107,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-[class^=el-]:before,
+[class^="el-"]:before,
 [class*=" el-"]:before {
   font-family: "element" !important;
   font-style: normal !important;
@@ -209,6 +214,10 @@ html {
 
 .el-search:before {
   content: "x";
+}
+
+.el-graph:before {
+  content: "\79";
 }
 
 /* -------------------------------------
@@ -508,14 +517,14 @@ html {
   height: 50px;
   margin-top: 5px;
 }
-.c-quizSect .quizRow .quizOption input[type=radio] {
+.c-quizSect .quizRow .quizOption input[type="radio"] {
   border: 1px solid red;
   position: relative;
   top: 13px;
   opacity: 0;
   z-index: 3;
 }
-.c-quizSect .quizRow .quizOption input[type=radio] ~ .optionDiv {
+.c-quizSect .quizRow .quizOption input[type="radio"] ~ .optionDiv {
   border: 1px solid #333;
   height: 48px;
   width: 48px;
@@ -526,22 +535,22 @@ html {
   z-index: 2;
   border-radius: 50%;
 }
-.c-quizSect .quizRow .quizOption input[type=radio]:checked ~ .optionDiv {
+.c-quizSect .quizRow .quizOption input[type="radio"]:checked ~ .optionDiv {
   background-color: #10223a;
 }
-.c-quizSect .quizRow .quizOption.c2 input[type=radio] ~ .optionDiv {
+.c-quizSect .quizRow .quizOption.c2 input[type="radio"] ~ .optionDiv {
   height: 40px;
   width: 40px;
   margin-left: -20px;
   top: 4px;
 }
-.c-quizSect .quizRow .quizOption.c3 input[type=radio] ~ .optionDiv {
+.c-quizSect .quizRow .quizOption.c3 input[type="radio"] ~ .optionDiv {
   height: 30px;
   width: 30px;
   margin-left: -15px;
   top: 9px;
 }
-.c-quizSect .quizRow .quizOption.c4 input[type=radio] ~ .optionDiv {
+.c-quizSect .quizRow .quizOption.c4 input[type="radio"] ~ .optionDiv {
   height: 20px;
   width: 20px;
   margin-left: -10px;
@@ -599,23 +608,23 @@ html {
     height: 44px;
     margin-top: 0;
   }
-  .c-quizSect .quizRow .quizOption input[type=radio] ~ .optionDiv {
+  .c-quizSect .quizRow .quizOption input[type="radio"] ~ .optionDiv {
     height: 42px;
     width: 42px;
     top: 0;
     left: 24px;
   }
-  .c-quizSect .quizRow .quizOption.c2 input[type=radio] ~ .optionDiv {
+  .c-quizSect .quizRow .quizOption.c2 input[type="radio"] ~ .optionDiv {
     height: 34px;
     width: 34px;
     margin-left: 0;
   }
-  .c-quizSect .quizRow .quizOption.c3 input[type=radio] ~ .optionDiv {
+  .c-quizSect .quizRow .quizOption.c3 input[type="radio"] ~ .optionDiv {
     height: 24px;
     width: 24px;
     margin-left: 0;
   }
-  .c-quizSect .quizRow .quizOption.c4 input[type=radio] ~ .optionDiv {
+  .c-quizSect .quizRow .quizOption.c4 input[type="radio"] ~ .optionDiv {
     height: 18px;
     width: 18px;
     margin-left: 0;
@@ -1243,7 +1252,11 @@ html {
   .c-assesmentSect .c-tableRow.tbody .th .frmTxt {
     margin-top: 24px;
   }
-  .c-assesmentSect .c-tableRow.tbody .th .frmTxt:placeholder-shown ~ .forMobile {
+  .c-assesmentSect
+    .c-tableRow.tbody
+    .th
+    .frmTxt:placeholder-shown
+    ~ .forMobile {
     display: none;
   }
   .c-assesmentSect .uploadMobile {
@@ -1565,11 +1578,13 @@ html {
   font-weight: 500;
   text-transform: uppercase;
 }
-.datepicker .table-condensed th.prev, .datepicker .table-condensed th.next {
+.datepicker .table-condensed th.prev,
+.datepicker .table-condensed th.next {
   padding: 5px 0;
   text-align: center;
 }
-.datepicker .table-condensed th.prev .icon, .datepicker .table-condensed th.next .icon {
+.datepicker .table-condensed th.prev .icon,
+.datepicker .table-condensed th.next .icon {
   position: relative;
   top: 2px;
 }
